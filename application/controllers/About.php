@@ -19,9 +19,9 @@ class About extends Application
      */
     public function index()
     {
-        //$this->data['pagebody'] = 'welcome';
-        $this->load->view('about');
-        //$this->render();
+        $this->data['pagebody'] = 'welcome';
+        //$this->load->view('about');
+        $this->render();
     }
 
 }
