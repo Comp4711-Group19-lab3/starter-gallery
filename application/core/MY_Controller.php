@@ -23,17 +23,18 @@ class Application extends CI_Controller
 
 		//  Set basic view parameters
 		$this->data = array ();
-		$this->data['Start_Page_Lab3'] = 'CodeIgniter3.1 Starter 2';
+		$this->data['pagetitle'] = 'Comp4711 Lab 3';
 		$this->data['ci_version'] = (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : '';
 	}
 
-	/**
-	 * Render this page
-	 */
-	function render($template = 'template')
-	{
-		$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
-		$this->parser->parse('template', $this->data);
-	}
+    /**
+     * Render this page
+     */
+    function render($template = 'template')
+    {
+        $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
+        $this->parser->parse('template', $this->data);
+    }
+
 
 }
