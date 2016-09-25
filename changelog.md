@@ -13,4 +13,5 @@ All notable changes to this project will be documented in this file. Created by 
 
 ## [0.1.0] - 2016-09-24
 ### Added
-- release comments
+- release comments @gerardng.
+- release project @New3.
